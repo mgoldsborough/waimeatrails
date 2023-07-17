@@ -1,0 +1,214 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1, .h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.5rem;
+  }
+}
+
+h2, .h2 {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  h2, .h2 {
+    font-size: 2rem;
+  }
+}
+
+h3, .h3 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  h3, .h3 {
+    font-size: 1.75rem;
+  }
+}
+
+h4, .h4 {
+  font-size: calc(1.275rem + 0.3vw);
+}
+@media (min-width: 1200px) {
+  h4, .h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("assets/img/waimea_trails_masthead.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+header.masthead:before {
+  content: "";
+  position: absolute;
+  background-color: #1c375e;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+header.masthead img {
+  max-width: 300px;
+  margin: 0 auto 0.5em auto;
+  display: block
+}
+
+header.masthead h1, header.masthead .h1 {
+  font-size: 2rem;
+  font-family: "Roboto Condensed";
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+header.masthead h2, header.mmasthead .h2 {
+  font-family: "Roboto";
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1, header.masthead .h1 {
+    font-size: 3rem;
+  }
+}
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+
+
+
+.call-to-action {
+  position: relative;
+  background-color: #343a40;
+  background: url("assets/img/waimea_streamside_trail_bg1.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+.call-to-action:before {
+  content: "";
+  position: absolute;
+  background-color: #1c375e;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+footer {
+  background: #E3E4E2;
+  padding: 3em 0;
+}
+
+.partners {
+  background: #2C3A29;
+  color: #fff;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.features-images h3.callout {
+  text-align: center;
+  color: #979797;
+  margin: auto;
+  width:70%;
+}
+
+.features-images img {
+  padding-bottom: 1rem;
+}
+
+.features-images p {
+  min-height: 100px;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+.showcase .showcase-text {
+  padding: 7rem;
+}
+
+.latest-news h3 {
+  text-align: center;
+  
+}
+
+.border {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 0;
+  margin-right: 0;
+  width: 150px;
+}
+
+.border.border-green {
+  border-bottom: solid 2px green !important;
+}
+
+.border.border-center {
+  margin: 0 auto;
+}
+
