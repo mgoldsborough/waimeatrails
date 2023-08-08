@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<header class="masthead" style="background: url('{{ site.baseurl }}/assets/img/waimea_trails_masthead.jpg') no-repeat center center;">
+<header class="masthead" style="background: url('{{ site.baseurl }}/assets/img/waimea_trails_masthead2.jpg') no-repeat center center;">
   <div class="container position-relative">
       <div class="row justify-content-center">
           <div class="col-xl-6">
@@ -30,7 +30,7 @@ layout: default
         <h4>Visit It</h4>
         <img class="img-fluid" src="{{ site.baseurl }}/assets/img/waimea_trails_visit_us.jpg" />
         <div class="text-center">
-          <button type="button" class="btn btn-success mb-3">PLAN YOUR TRIP</button>
+          <a href="{{ site.baseurl}}{% link trailmap.html %}" class="btn btn-success mb-3">PLAN YOUR TRIP</a>
         </div>      
         <p class="clearfix"> 
           Ke Ala Kahawai o Waimea follows the Waikoloa stream through Waimea town for 1.04 miles. 
@@ -43,7 +43,7 @@ layout: default
         <h4>Build It</h4>
         <img class="img-fluid" src="{{ site.baseurl }}/assets/img/waimea_trails_feature2.jpg" />
         <div class="text-center">
-          <button type="button" class="btn btn-success mb-3">GET INVOLVED</button>
+          <a href="{{ site.baseurl}}{% link events.html %}" class="btn btn-success mb-3" >GET INVOLVED</a>
         </div>
         <p>
           Diverse opportunities are available across the entire Trail, from building and maintenance to 
@@ -102,7 +102,23 @@ layout: default
       <h3>Latest news</h3>
       <div class="border border-green border-center"></div>
     </div>
-    <div class="row justify-content-center justify-content-md-center py-5">
+
+
+    {% for post in site.posts %}
+    <div class="row justify-content-center justify-content-md-center py-4">
+      <div class="col-3">
+        <img class="img-fluid" src="{{ post.image }}" />
+      </div>
+      <div class="col-6">
+        <h4><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h4>
+        <i class="bi bi-clock"></i> {{ post.date | date_to_string }}
+        <p>{{ post.content | truncatewords: 50 }}</p>
+      </div>
+    </div>
+    {% endfor %}
+
+
+    <!-- <div class="row justify-content-center justify-content-md-center py-5">
       <div class="col-3">
         <img class="img-fluid" src="https://placehold.co/250" />
       </div>
@@ -130,7 +146,7 @@ layout: default
         <h4>Title 123</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-    </div>
+    </div> -->
 
   </div>
 
@@ -182,10 +198,19 @@ layout: default
 </section>
 
 <section class="partners">
-  <div class="container-fluid p-0"></div>
-    <h3>Our Partners</h3>
-    <a href="https://www.fofhawaii.org/">
-      <img src="assets/img/friends_of_the_future_logo.png">
-    </a>
+  <div class="container">
+  <h3>Our Partners</h3>
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-sm-12">
+      <a href="https://www.hawaiicounty.gov/our-county/mayor/waimea-trails-and-greenways-project#ad-image-11">
+        <img class="img-fluid" src="assets/img/county_of_hawaii.svg">
+      </a>
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <a href="https://www.fofhawaii.org/">
+        <img class="img-fluid pt-3" src="assets/img/friends_of_the_future_logo.png">
+      </a>
+    </div>
   </div>
+</div>
 </section>

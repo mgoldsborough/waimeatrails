@@ -166,6 +166,10 @@ footer {
   padding-bottom: 3rem;
 }
 
+.partners img {
+  max-height: 50px;
+}
+
 .features-images h3.callout {
   text-align: center;
   color: #979797;

@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Waimea Trails and Greenways</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon.jpg">
+  <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/img/favicon.jpg">
 
   <!-- open graph -->
   <meta property=”og:title” content="Waimea Trails and Greenways" />
   <meta property=”og:url” content=https://www.waimeatrails.org/” />
-  <meta property=”og:description” content="Home page for Mathew Goldsborough, CTO of Forever Oceans" />
+  <meta property=”og:description” content="Waimea Trails and Greenways" />
   <meta property=”og:image” content=”https://www.waimeatrails.org/assets/img/waimea_trails_logo.png” />
   <meta property=”og:type” content="website" />
 
@@ -40,47 +40,7 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="{{ site.baseurl }}/assets/img/waimea_trails_logo_no_text.jpg" alt="Waimea Trails" width="50" height="40">
-      </a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{ site.baseurl }}">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ site.baseurl }}{% link mission.html %}">Our Mission</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ site.baseurl }}{% link timeline.html %}">Timeline</a>
-          </li>
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li> -->
-        </ul>
-
-        <button class="btn btn-success mx-2">Join/Renew</button>
-        <a href="https://friends-of-the-future.square.site/product/waimea-trails-greenways/29?cs=true&cst=custom" class="btn btn-primary">
-          Donate
-        </a>
-
-      </div>
-    </div>
-  </nav>
+  {% include nav.html %}
 
   {{ content }}
 
