@@ -1,10 +1,9 @@
 ---
-layout: post_video
+layout: post
 title: "Step into Nature: Celebrating National Trails Day with an Unforgettable Journey!"
 date: 2023-05-31 13:22:19 -1000
 image: /assets/img/2023-05-31-national-trails-day.jpg
 categories: jekyll update
-video_embed: https://www.dvidshub.net/video/embed/878378
 ---
 
 Mayor Mitch Roth is pleased to invite residents from around Hawaiʻi Island to visit the Ke Ala Kahawai O Waimea, known as The Streamside Trail of Waimea, to celebrate National Trails Day on Saturday, June 3rd.
