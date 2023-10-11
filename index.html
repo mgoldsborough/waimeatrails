@@ -29,9 +29,13 @@ layout: default
       <div class="col-lg-4 ">
         <h4>Visit It</h4>
         <img class="img-fluid" src="{{ site.baseurl }}/assets/img/waimea_trails_visit_us.jpg" />
+
+        {% comment %}
         <div class="text-center">
           <a href="{{ site.baseurl}}{% link trailmap.html %}" class="btn btn-success mb-3">PLAN YOUR TRIP</a>
         </div>      
+        {% endcomment %}
+
         <p class="clearfix"> 
           Ke Ala Kahawai o Waimea follows the Waikoloa stream through Waimea town for 1.04 miles. 
           The Waimea trail is shaded, level and kid-friendly. You’ll find dog walkers, joggers and 
@@ -42,9 +46,13 @@ layout: default
       <div class="col-lg-4">
         <h4>Build It</h4>
         <img class="img-fluid" src="{{ site.baseurl }}/assets/img/waimea_trails_feature2.jpg" />
+
+        {% comment %}
         <div class="text-center">
           <a href="{{ site.baseurl}}{% link events.html %}" class="btn btn-success mb-3" >GET INVOLVED</a>
         </div>
+        {% endcomment %}
+
         <p>
           Diverse opportunities are available across the entire Trail, from building and maintenance to 
           outreach work to volunteer photography. If you want to get involved in improving the Trail and
@@ -55,9 +63,12 @@ layout: default
       <div class="col-lg-4">
         <h4>Support It</h4>
         <img class="img-fluid" src="{{ site.baseurl }}/assets/img/waimea_trails_feature3.jpg" />
+        {% comment %}
         <div class="text-center">
           <button type="button" class="btn btn-success mb-3">WAYS TO GIVE</button>
         </div>
+        {% endcomment %}
+        
         <p>
           The Waimea Streamside Trail is here and accessible because of the generosity of our many
           dedicated supporters. Together, we build and protect the Trail. Give a or renew 
@@ -76,7 +87,9 @@ layout: default
         <div class="border border-green"></div>
         <p>This project addresses the transportation infrastructure required to facilitate the town’s growing community.  It connects nature parks, schools, cultural centers, and local businesses. It improves connectivity and safety. This form of infrastructure greatly enhances the safety of motorists, bicyclists, and pedestrians. It expands transit services and provides convenient connections within Waimea to other parts of our island.  
         </p>
+        {% comment %}
         <button class="btn btn-success">LEARN MORE</button>
+        {% endcomment %}
       </div>
     </div>
   </div>
@@ -88,14 +101,18 @@ layout: default
         <h3>Rich in history</h3>
         <div class="border border-green"></div>
         <p>The history and legends surrounding this trail date back to prehistoric Hawaiian history, 
-          when Waimea (Kamuela) was home to the Ki Puu Puu warriors.</p>
+          when Waimea (Kamuela) was home to the Ki'pu'upu'u warriors.</p>
+
+        {% comment %}
         <button class="btn btn-success">DISCOVER NOW</button>
+        {% endcomment %}
       </div>
       <div class="col-lg-6 showcase-img" style="background-image: url('{{ site.baseurl }}/assets/img/hawaiian_warriors.jpeg"></div>
     </div>
   </div>
 </section>
 
+{% comment %}
 <section class="latest-news py-5">
   <div class="container-fluid">
     <div class="row pb-5">
@@ -117,7 +134,7 @@ layout: default
     </div>
     {% endfor %}
 
-
+    {% comment %}
     <!-- <div class="row justify-content-center justify-content-md-center py-5">
       <div class="col-3">
         <img class="img-fluid" src="https://placehold.co/250" />
@@ -147,10 +164,11 @@ layout: default
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </div> -->
-
+    {% endcomment %}
   </div>
 
 </section>
+{% endcomment %}
 
 <section class="call-to-action text-white text-center" id="signup">
   <div class="container position-relative">
