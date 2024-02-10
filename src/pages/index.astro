@@ -15,20 +15,84 @@ import CountyOfHawaiiLogo from '../images/logos/county_of_hawaii.svg';
 import FriendsOfTheFutureLogo from '../images/logos/friends_of_the_future_logo.png';
 ---
 
+<style>
+
+.masthead {
+  position: relative;
+  background-color: #343a40;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.masthead:before {
+  content: "";
+  position: absolute;
+  background-color: #1c375e;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.masthead {
+	text-align: center;
+	color: white;
+}
+
+.masthead img {
+  max-width: 300px;
+  margin: 0 auto 0.5em auto;
+  display: block
+}
+
+.masthead h1, 
+.masthead .h1 {
+  font-size: 2rem;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+}
+
+.masthead h2, 
+.masthead .h2 {
+  font-family: "Roboto";
+}
+
+.shadow h1, 
+.shadow h2 {
+	text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+} 
+
+@media (min-width: 768px) {
+  .masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  .masthead h1, 
+	.masthead .h1 {
+    font-size: 3rem;
+  }
+}
+</style>
+
+
 <SiteLayout>
 	<header class="masthead" style={`background-image: url(${Masthead.src})`}>	
 		<div class="container position-relative">
 				<div class="row justify-content-center">
+						<div class="col-xl-6 my-3 shadow">
+							<img class="img-fluid" alt="Waimea Trails and Greenways Logo" src={Logo.src} />
+							<h1 class="mb-1">
+								Ke Ala Kahawai o Waimea
+							</h1>
+							<h2>
+								The Streamside Trail of Waimea
+							</h2>
+						</div>
 						<div class="col-xl-6">
-								<div class="text-center text-white">
-									<img class="img-fluid" alt="Waimea Trails and Greenways Logo" src={Logo.src} />
-									<h1 class="mb-1">
-										Ke Ala Kahawai o Waimea
-									</h1>
-									<h2>
-										The Streamside Trail of Waimea
-									</h2>
-								</div>
+							<script async data-uid="0c96d843a9" src="https://waimeatrails.ck.page/0c96d843a9/index.js"></script>
 						</div>
 				</div>
 		</div>
@@ -136,7 +200,7 @@ import FriendsOfTheFutureLogo from '../images/logos/friends_of_the_future_logo.p
 	<section class="call-to-action text-white text-center" style={`background-image: url(${Background1.src})`} id="signup">
 		<div class="container position-relative">
 				<div class="row justify-content-center">
-						<div class="col-xl-6">
+						<div class="col-xl-6 text-center">
 							<script async data-uid="91edc0ef0f" src="https://waimeatrails.ck.page/91edc0ef0f/index.js"></script>
 						</div>
 				</div>
