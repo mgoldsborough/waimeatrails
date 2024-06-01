@@ -173,7 +173,7 @@ footer {
   max-height: 50px;
 }
 
-.features-images h3.callout {
+.features-images .callout {
   text-align: center;
   color: #979797;
   margin: auto;
@@ -438,4 +438,54 @@ ul::before {
 
 .timeline .eventdesc {
   margin-inline-start:10px
+}
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+
+  color:white;
+}
+header.masthead:before {
+  content: "";
+  position: absolute;
+  background-color: #1c375e;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+header.masthead img {
+  max-width: 300px;
+  margin: 0 auto 0.5em auto;
+  display: block
+}
+
+header.masthead h1, header.masthead .h1 {
+  font-size: 2rem;
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+header.masthead h2, header.mmasthead .h2 {
+  font-family: "Roboto";
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1, header.masthead .h1 {
+    font-size: 3rem;
+  }
 }

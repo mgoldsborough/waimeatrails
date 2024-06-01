@@ -1,230 +1,262 @@
 ---
-import SiteLayout from '../layouts/default.astro';
+import SiteLayout from "../layouts/default.astro";
 
-import Logo from '../images/logos/waimea_trails_logo.png';
-import Masthead from '../images/backgrounds/waimea_trails_masthead2.webp'
-import FeatureImage1 from '../images/backgrounds/waimea_trails_visit_us.jpg'
-import FeatureImage2 from '../images/backgrounds/waimea_trails_feature2.jpg'
-import FeatureImage3 from '../images/backgrounds/waimea_trails_feature3.jpg'
-import Background1 from '../images/backgrounds/waimea_streamside_trail_bg1.jpg';
+import Logo from "../images/logos/waimea_trails_logo.png";
+import Masthead from "../images/backgrounds/waimea_trails_masthead2.webp";
+import FeatureImage1 from "../images/backgrounds/waimea_trails_visit_us.jpg";
+import FeatureImage2 from "../images/backgrounds/waimea_trails_feature2.jpg";
+import FeatureImage3 from "../images/backgrounds/waimea_trails_feature3.jpg";
+import Background1 from "../images/backgrounds/waimea_streamside_trail_bg1.jpg";
 
-import HawaiianWarriors from '../images/backgrounds/hawaiian_warriors.jpeg';
-import AlignmentMap from '../images/backgrounds/alignment_map_cropped.webp';
+import HawaiianWarriors from "../images/backgrounds/hawaiian_warriors.jpeg";
+import AlignmentMap from "../images/backgrounds/alignment_map_cropped.webp";
 
-import CountyOfHawaiiLogo from '../images/logos/county_of_hawaii.svg';
-import FriendsOfTheFutureLogo from '../images/logos/friends_of_the_future_logo.png';
+import CountyOfHawaiiLogo from "../images/logos/county_of_hawaii.svg";
+import FriendsOfTheFutureLogo from "../images/logos/friends_of_the_future_logo.png";
 ---
 
 <style>
-
-.masthead {
-  position: relative;
-  background-color: #343a40;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-.masthead:before {
-  content: "";
-  position: absolute;
-  background-color: #1c375e;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.5;
-}
-
-.masthead {
-	text-align: center;
-	color: white;
-}
-
-.masthead img {
-  max-width: 300px;
-  margin: 0 auto 0.5em auto;
-  display: block
-}
-
-.masthead h1, 
-.masthead .h1 {
-  font-size: 2rem;
-  font-family: "Roboto Condensed";
-  font-weight: 700;
-}
-
-.masthead h2, 
-.masthead .h2 {
-  font-family: "Roboto";
-}
-
-.shadow h1, 
-.shadow h2 {
-	text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
-} 
-
-@media (min-width: 768px) {
   .masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    position: relative;
+    background-color: #343a40;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
-  .masthead h1, 
-	.masthead .h1 {
-    font-size: 3rem;
+  .masthead:before {
+    content: "";
+    position: absolute;
+    background-color: #1c375e;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
   }
-}
+
+  .masthead {
+    text-align: center;
+    color: white;
+  }
+
+  .masthead img {
+    max-width: 300px;
+    margin: 0 auto 0.5em auto;
+    display: block;
+  }
+
+  .masthead h1,
+  .masthead .h1 {
+    font-size: 2rem;
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+  }
+
+  .masthead h2,
+  .masthead .h2 {
+    font-family: "Roboto";
+  }
+
+  .shadow h1,
+  .shadow h2 {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  @media (min-width: 768px) {
+    .masthead {
+      padding-top: 12rem;
+      padding-bottom: 12rem;
+    }
+    .masthead h1,
+    .masthead .h1 {
+      font-size: 3rem;
+    }
+  }
 </style>
 
-
 <SiteLayout>
-	<header class="masthead" style={`background-image: url(${Masthead.src})`}>	
-		<div class="container position-relative">
-				<div class="row justify-content-center">
-						<div class="col-xl-6 my-3 shadow">
-							<img class="img-fluid" alt="Waimea Trails and Greenways Logo" src={Logo.src} />
-							<h1 class="mb-1">
-								Ke Ala Kahawai o Waimea
-							</h1>
-							<h2>
-								The Streamside Trail of Waimea
-							</h2>
-						</div>
-						<div class="col-xl-6">
-							<script async data-uid="0c96d843a9" src="https://waimeatrails.ck.page/0c96d843a9/index.js"></script>
-						</div>
-				</div>
-		</div>
-	</header>
-	
-	<section class="features-images">
-		<h3 class="callout my-5">Since 1994, community members have been creating an accessible, 
-			non-vehicular pathway between residences, businesses, and schools.
-		</h3>
-	
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 ">
-					<h4>Visit It</h4>
-					<img width="500" height="375" class="img-fluid" alt="View the Waimea Trails trail map" src={FeatureImage1.src} />
-	
-					<div class="text-center">
-						<a href="/trailmap" class="btn btn-success mb-3">PLAN YOUR TRIP</a>
-					</div>      
-	
-					<p class="clearfix"> 
-						Ke Ala Kahawai o Waimea follows the Waikoloa stream through Waimea town for 1.04 miles. 
-						The Waimea trail is shaded, level and kid-friendly. You’ll find dog walkers, joggers and 
-						off-road bicyclists enjoing the stream side trail.
-					</p>
-					
-				</div>
-				<div class="col-lg-4">
-					<h4>Build It</h4>
-					<img width="500" height="375" class="img-fluid" alt="Volunteer with Waimea Trails" src={FeatureImage2.src} />
-	
-					<script async data-uid="76ce02ed53" src="https://waimeatrails.ck.page/76ce02ed53/index.js"></script>
+  <header class="masthead" style={`background-image: url(${Masthead.src})`}>
+    <div class="container position-relative">
+      <div class="row justify-content-center">
+        <div class="col-xl-6 my-3 shadow">
+          <img class="img-fluid" alt="Waimea Trails and Greenways Logo" src={Logo.src} />
+          <h1>Ke Ala Kahawai O Waimea</h1>
+          <h2>Connecting community through trails</h2>
+        </div>
+      </div>
+    </div>
+  </header>
 
-					<div class="text-center">
-						<!-- {% comment %}<a href="{{ site.baseurl}}{% link events.html %}" class="btn btn-success mb-3" >GET INVOLVED</a>{% endcomment %} -->
-						<a  class="btn btn-success mb-3" data-formkit-toggle="76ce02ed53" href="https://waimeatrails.ck.page/76ce02ed53">VOLUNTEER TO HELP</a>
-					</div>
-	
-					<p>
-						Diverse opportunities are available across the entire Trail, from building and maintenance to 
-						outreach work to volunteer photography. If you want to get involved in improving the Trail and
-						its community, we've got options for you.
-					</p>
-					
-				</div>
-				<div class="col-lg-4">
-					<h4>Support It</h4>
-					<img width="500" height="375" class="img-fluid" alt="Donate to Waimea Trails" src={FeatureImage3.src} />
-					<div class="text-center">
-						<a href="https://friends-of-the-future.square.site/product/waimea-trails-greenways/29" class="btn btn-success mb-3" >DONATE TODAY</a>
-					</div>
-					
-					<p>
-						The Waimea Streamside Trail is here and accessible because of the generosity of our many
-						dedicated supporters. Together, we build, maintain, and protect the Trail. Give a donation today!
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="showcase p-0 bg-light">
-		<div class="container-fluid p-0">
-			<div class="row g-0">
-				<div class="col-lg-6 showcase-img" style={`background-image: url(${AlignmentMap.src})`}></div>
-				<div class="col-lg-6 showcase-text">
-					<h3>A Pedestrian Corridor for Waimea </h3>
-					<div class="border border-green"></div>
-					<p>This project addresses the transportation infrastructure required to facilitate the town’s growing community.  
-						It connects nature parks, schools, cultural centers, and local businesses. It improves connectivity and safety. 
-						This form of infrastructure greatly enhances the safety of motorists, bicyclists, and pedestrians. It expands transit
-						 services and provides convenient connections within Waimea.
-					</p>
-					<!-- {% comment %}
+  <section class="features-images">
+    <h2 class="callout my-5">
+      Since 1994, volunteers have been creating an accessible, non-vehicular pathway between
+      residences, businesses, and schools.
+    </h2>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h4>Visit It</h4>
+          <img
+            width="500"
+            height="375"
+            class="img-fluid"
+            alt="View the Waimea Trails trail map"
+            src={FeatureImage1.src}
+          />
+
+          <div class="text-center">
+            <a href="/trailmap" class="btn btn-success mb-3">PLAN YOUR TRIP</a>
+          </div>
+
+          <p class="clearfix">
+            Ke Ala Kahawai o Waimea follows the Waikoloa stream through Waimea town for 1.04 miles.
+            The Waimea trail is shaded, level and kid-friendly. You’ll find dog walkers, joggers and
+            off-road bicyclists enjoying the stream side trail.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <h4>Build It</h4>
+          <img
+            width="500"
+            height="375"
+            class="img-fluid"
+            alt="Volunteer with Waimea Trails"
+            src={FeatureImage2.src}
+          />
+
+          <script async data-uid="76ce02ed53" src="https://waimeatrails.ck.page/76ce02ed53/index.js"
+          ></script>
+
+          <div class="text-center">
+            <!-- {% comment %}<a href="{{ site.baseurl}}{% link events.html %}" class="btn btn-success mb-3" >GET INVOLVED</a>{% endcomment %} -->
+            <a
+              class="btn btn-success mb-3"
+              data-formkit-toggle="76ce02ed53"
+              href="https://waimeatrails.ck.page/76ce02ed53">VOLUNTEER TO HELP</a
+            >
+          </div>
+
+          <p>
+            Diverse opportunities are available across the entire Trail, from building and
+            maintenance to outreach work to volunteer photography. If you want to get involved in
+            improving the Trail and its community, we've got options for you.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <h4>Support It</h4>
+          <img
+            width="500"
+            height="375"
+            class="img-fluid"
+            alt="Donate to Waimea Trails"
+            src={FeatureImage3.src}
+          />
+          <div class="text-center">
+            <a
+              href="https://friends-of-the-future.square.site/product/waimea-trails-greenways/29"
+              class="btn btn-success mb-3">DONATE TODAY</a
+            >
+          </div>
+
+          <p>
+            The Waimea Streamside Trail is here and accessible because of the generosity of our many
+            dedicated supporters. Together, we build, maintain, and protect the Trail. Give a
+            donation today!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="showcase p-0 bg-light">
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <div class="col-lg-6 showcase-img" style={`background-image: url(${AlignmentMap.src})`}>
+        </div>
+        <div class="col-lg-6 showcase-text">
+          <h3>A Pedestrian Corridor for Waimea</h3>
+          <div class="border border-green"></div>
+          <p>
+            This project addresses the transportation infrastructure required to facilitate the
+            town’s growing community. It connects nature parks, schools, cultural centers, and local
+            businesses. It improves connectivity and safety. This form of infrastructure greatly
+            enhances the safety of motorists, bicyclists, and pedestrians. It expands transit
+            services and provides convenient connections within Waimea.
+          </p>
+          <!-- {% comment %}
 					<button class="btn btn-success">LEARN MORE</button>
 					{% endcomment %} -->
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="showcase p-0 bg-light">
-		<div class="container-fluid p-0">
-			<div class="row g-0">
-				<div class="col-lg-6 showcase-text">
-					<h3>Rich in history</h3>
-					<div class="border border-green"></div>
-					<p>The history and legends surrounding this trail date back to prehistoric Hawaiian history, 
-						when Waimea (Kamuela) was home to the Ki'pu'upu'u warriors.</p>
-	
-					<!-- {% comment %}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="showcase p-0 bg-light">
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <div class="col-lg-6 showcase-text">
+          <h3>Rich in history</h3>
+          <div class="border border-green"></div>
+          <p>
+            The history and legends surrounding this trail date back to prehistoric Hawaiian
+            history, when Waimea (Kamuela) was home to the Ki'pu'upu'u warriors.
+          </p>
+
+          <!-- {% comment %}
 					<button class="btn btn-success">DISCOVER NOW</button>
 					{% endcomment %} -->
-				</div>
+        </div>
 
-				
-				<div class="col-lg-6 showcase-img" style={`background-image: url(${HawaiianWarriors.src})`}>
-					<div class="credit-container">
-						<p class="align-bottom">Credit: <a href="https://hawaiianatart.org/">Brook Kapukuniahi Parker</a></a></p>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</section>
-	
-	<section class="call-to-action text-white text-center" style={`background-image: url(${Background1.src})`} id="signup">
-		<div class="container position-relative">
-				<div class="row justify-content-center">
-						<div class="col-xl-6 text-center">
-							<script async data-uid="91edc0ef0f" src="https://waimeatrails.ck.page/91edc0ef0f/index.js"></script>
-						</div>
-				</div>
-		</div>
-	</section>
-	
-	<section class="partners">
-		<div class="container">
-		<h3>Our Partners</h3>
-		<div class="row justify-content-center">
-			<div class="col">
-				<a href="https://www.hawaiicounty.gov/our-county/mayor/waimea-trails-and-greenways-project#ad-image-11">
-					<img class="img-fluid" alt="County of Hawaii Logo" src={CountyOfHawaiiLogo.src}>
-					<span class="d-none">County of Hawaii</span>
-				</a>
-			</div>
-			<div class="col">
-				<a href="https://www.fofhawaii.org/">
-					<img class="img-fluid pt-3" alt="Friends of the Future Logo" src={FriendsOfTheFutureLogo.src}>
-					<span class="d-none">Friends of Hawaii</span>
-				</a>
-			</div>
-		</div>
-	</div>
-	</section>
-	
+        <div class="col-lg-6 showcase-img" style={`background-image: url(${HawaiianWarriors.src})`}>
+          <div class="credit-container">
+            <p class="align-bottom">
+              Credit: <a href="https://hawaiianatart.org/">Brook Kapukuniahi Parker</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </SiteLayout>
+
+<section
+  class="call-to-action text-white text-center"
+  style={`background-image: url(${Background1.src})`}
+  id="signup"
+>
+  <div class="container position-relative">
+    <div class="row justify-content-center">
+      <div class="col-xl-6 text-center">
+        <script async data-uid="91edc0ef0f" src="https://waimeatrails.ck.page/91edc0ef0f/index.js"
+        ></script>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="partners">
+  <div class="container">
+    <h3>Our Partners</h3>
+    <div class="row justify-content-center">
+      <div class="col">
+        <a
+          href="https://www.hawaiicounty.gov/our-county/mayor/waimea-trails-and-greenways-project#ad-image-11"
+        >
+          <img class="img-fluid" alt="County of Hawaii Logo" src={CountyOfHawaiiLogo.src} />
+          <span class="d-none">County of Hawaii</span>
+        </a>
+      </div>
+      <div class="col">
+        <a href="https://www.fofhawaii.org/">
+          <img
+            class="img-fluid pt-3"
+            alt="Friends of the Future Logo"
+            src={FriendsOfTheFutureLogo.src}
+          />
+          <span class="d-none">Friends of Hawaii</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
